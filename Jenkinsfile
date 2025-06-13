@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                javac HelloWorld.java
+                bat 'javac HelloWorld.java'
             }
         }
 
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                java HelloWorld
+                bat 'java HelloWorld'
             }
         }
     }
