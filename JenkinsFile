@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Example build commands
-                // sh 'make build'
+                sh 'javac HelloWorld.java
             }
         }
 
@@ -21,8 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Example deploy commands
-                // sh './deploy.sh'
+                sh 'java HelloWorld'
             }
         }
     }
